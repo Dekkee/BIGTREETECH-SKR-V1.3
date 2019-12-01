@@ -475,9 +475,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Wanhao Duplicator i3 w/ MK10 Hotend
-    #define  DEFAULT_Kp 18.68
-    #define  DEFAULT_Ki 1.06
-    #define  DEFAULT_Kd 82.27
+#define DEFAULT_Kp 32.76
+#define DEFAULT_Ki 1.74
+#define DEFAULT_Kd 153.99
   
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -930,7 +930,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { 20, 20, 0 }
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
