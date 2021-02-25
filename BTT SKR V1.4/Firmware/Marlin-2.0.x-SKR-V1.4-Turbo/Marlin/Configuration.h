@@ -490,9 +490,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // zav
-  #define DEFAULT_Kp 14.00
-  #define DEFAULT_Ki 0.92
-  #define DEFAULT_Kd 50.98
+  #define DEFAULT_Kp 14.41
+  #define DEFAULT_Ki 0.97
+  #define DEFAULT_Kd 53.34
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -528,7 +528,7 @@
  * heater. If your configuration is significantly different than this and you don't understand
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  */
-//#define PIDTEMPBED
+#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
@@ -544,11 +544,16 @@
   //#define MIN_BED_POWER 0
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
+  //zav
+  #define DEFAULT_bedKp 48.89
+  #define DEFAULT_bedKi 6.67
+  #define DEFAULT_bedKd 238.99
+
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 70.13//10.00
-  #define DEFAULT_bedKi 11.27//.023
-  #define DEFAULT_bedKd 290.86//305.4
+  //#define DEFAULT_bedKp 70.13//10.00
+  //#define DEFAULT_bedKi 11.27//.023
+  //#define DEFAULT_bedKd 290.86//305.4
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
